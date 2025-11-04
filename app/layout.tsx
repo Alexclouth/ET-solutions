@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Professional electrical and sanitary installation, maintenance, and safety systems for modern high-rise buildings. Trusted by leading construction companies.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png", // ✅ path to your favicon in public folder
+  },
 }
 
 export default function RootLayout({
@@ -21,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Add this line to ensure browser support */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
