@@ -51,7 +51,7 @@ export default function Navigation() {
             className="hidden sm:block px-6 py-2 bg-teal-500 text-navy-900 rounded-lg font-semibold hover:bg-teal-400 transition-colors text-sm"
           >
             <a href="tel:+251913864370">
-              091913864370
+              0913864370
             </a>
           </motion.button>
 

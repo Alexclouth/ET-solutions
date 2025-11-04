@@ -179,19 +179,31 @@ export default function Contact() {
           viewport={{ once: true }}
           className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 sm:hidden"
         >
-          <motion.a
-            href="https://wa.me/15551234567"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
-            aria-label="Contact on WhatsApp"
+        <motion.a
+          href="sms:+251913864370"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center justify-center w-14 h-14 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-colors"
+          aria-label="Send SMS"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-6 h-6"
           >
-            <MessageCircle size={24} />
-          </motion.a>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M8 10h8M8 14h5m-9 6h10.5a2.5 2.5 0 002.5-2.5V6.5A2.5 2.5 0 0014.5 4H5.5A2.5 2.5 0 003 6.5v11A2.5 2.5 0 005.5 20z"
+            />
+          </svg>
+        </motion.a>
+
           <motion.a
-            href="tel:+15551234567"
+            href="tel:+251913864370"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center w-14 h-14 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 transition-colors"
